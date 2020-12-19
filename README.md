@@ -26,4 +26,4 @@ We’re going to make a Body Mass Index Calculator inspired by the beautiful des
 - Understand the difference between const and final in Dart and when to use each.
 
 
-![End Banner](https://github.com/londonappbrewery/Images/blob/master/readme-end-banner.png)
+![End Banner](assets/bmi-calc-demo.gif)
