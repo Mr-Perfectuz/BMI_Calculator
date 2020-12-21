@@ -31,7 +31,7 @@ class _InputPageState extends State<InputPage> {
         child: Text('Body Text'),
       ),
       floatingActionButton: Theme(
-        data: ThemeData(accentColor: Colors.purple),
+        data: ThemeData.light(),
         child: FloatingActionButton(
           child: Icon(Icons.add),
         ),
