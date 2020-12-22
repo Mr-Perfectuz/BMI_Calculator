@@ -1,3 +1,4 @@
+import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
 class InputPage extends StatefulWidget {
@@ -49,6 +50,15 @@ class _InputPageState extends State<InputPage> {
               ),
             ],
           )),
+          Container(
+            margin: EdgeInsets.all(10.0),
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.0),
+              color: Color(0xFFEB1555),
+            ),
+            width: 200.0,
+            height: 50.0,
+          )
         ],
       ),
     );
