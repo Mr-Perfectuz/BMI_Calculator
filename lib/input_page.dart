@@ -1,5 +1,6 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
+import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 
 const bottomContainerHeigh = 50.0;
 const ExpandedWidgetColor = Color(0xFF1D1E33);
@@ -25,6 +26,24 @@ class _InputPageState extends State<InputPage> {
               Expanded(
                 child: ReusableCard(
                   colour: ExpandedWidgetColor,
+                  carchild: Column(
+                    children: <Widget>[
+                      Icon(
+                        FontAwesomeIcons.male,
+                        size: 80.0,
+                      ),
+                      SizedBox(
+                        height: 15.0,
+                      ),
+                      Text(
+                        'MALE',
+                        style: TextStyle(
+                          fontSize: 40.0,
+                          color: Color(0xFF8D8E98),
+                        ),
+                      )
+                    ],
+                  ),
                 ),
               ),
               Expanded(
