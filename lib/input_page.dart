@@ -39,7 +39,7 @@ class _InputPageState extends State<InputPage> {
                       Text(
                         'MALE',
                         style: TextStyle(
-                          fontSize: 40.0,
+                          fontSize: 30.0,
                           color: Color(0xFF8D8E98),
                         ),
                       )
@@ -61,9 +61,9 @@ class _InputPageState extends State<InputPage> {
                         height: 15.0,
                       ),
                       Text(
-                        'MALE',
+                        'FAMALE',
                         style: TextStyle(
-                          fontSize: 40.0,
+                          fontSize: 30.0,
                           color: Color(0xFF8D8E98),
                         ),
                       )
@@ -84,11 +84,35 @@ class _InputPageState extends State<InputPage> {
               Expanded(
                 child: ReusableCard(
                   colour: ExpandedWidgetColor,
+                  carchild: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'WEIGHT',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Color(0xFF8D8E98),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
               Expanded(
                 child: ReusableCard(
                   colour: ExpandedWidgetColor,
+                  carchild: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'AGE',
+                        style: TextStyle(
+                          fontSize: 20.0,
+                          color: Color(0xFF8D8E98),
+                        ),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
