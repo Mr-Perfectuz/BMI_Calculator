@@ -18,13 +18,22 @@ class _InputPageState extends State<InputPage> {
   Color maleCardColor = incativeCardColor;
   Color femaleCardColor = incativeCardColor;
 
-  //1=male, 2 = demale
+  //1=male, 2 = female
   void updateColor(int gender) {
     if (gender == 1) {
       if (maleCardColor == incativeCardColor) {
         maleCardColor = activeCardColor;
       } else {
         maleCardColor = incativeCardColor;
+      }
+    }
+
+    // 2= female botton is pressed
+    if (gender == 2) {
+      if (femaleCardColor == incativeCardColor) {
+        femaleCardColor = activeCardColor;
+      } else {
+        femaleCardColor = incativeCardColor;
       }
     }
   }
@@ -57,11 +66,18 @@ class _InputPageState extends State<InputPage> {
                 ),
               ),
               Expanded(
-                child: ReusableCard(
-                  colour: femaleCardColor,
-                  carchild: CardIcon(
-                    icon: FontAwesomeIcons.female,
-                    label: 'FEMALE',
+                child: GestureDetector(
+                  onTap: () {
+                    setState(() {
+                      updateColor(2);
+                    });
+                  },
+                  child: ReusableCard(
+                    colour: femaleCardColor,
+                    carchild: CardIcon(
+                      icon: FontAwesomeIcons.female,
+                      label: 'FEMALE',
+                    ),
                   ),
                 ),
               ),
