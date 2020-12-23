@@ -66,12 +66,18 @@ class _InputPageState extends State<InputPage> {
               colour: KactiveCardColor,
               carchild: Column(
                 children: <Widget>[
-                  Center(
-                    child: Text(
-                      'Height',
-                      style: KlabelTextStyle,
-                    ),
+                  Text(
+                    'Height',
+                    style: KlabelTextStyle,
                   ),
+                  Row(
+                    children: <Widget>[
+                      Text(
+                        '180',
+                        style: KSliderTextStyle,
+                      )
+                    ],
+                  )
                 ],
               ),
             ),
