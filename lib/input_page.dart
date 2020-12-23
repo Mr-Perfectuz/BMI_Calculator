@@ -5,8 +5,9 @@ import 'icon_content.dart';
 import 'reusable_card.dart';
 
 const bottomContainerHeigh = 50.0;
-const ExpandedWidgetColor = Color(0xFF1D1E33);
+const activeCardColor = Color(0xFF1D1E33);
 const bottomContainerColor = Color(0xFFEB1555);
+const incativeCardColor = Color(0xFF111328);
 
 class InputPage extends StatefulWidget {
   @override
@@ -27,9 +28,14 @@ class _InputPageState extends State<InputPage> {
             children: <Widget>[
               Expanded(
                 child: GestureDetector(
-                  onTap: () {},
+                  onTap: () {
+                    setState(() {
+                      colo
+                    });
+                    print('Male card was pressed');
+                  },
                   child: ReusableCard(
-                    colour: ExpandedWidgetColor,
+                    colour: activeCardColor,
                     carchild: CardIcon(
                       icon: FontAwesomeIcons.male,
                       label: 'MALE',
@@ -39,7 +45,7 @@ class _InputPageState extends State<InputPage> {
               ),
               Expanded(
                 child: ReusableCard(
-                  colour: ExpandedWidgetColor,
+                  colour: activeCardColor,
                   carchild: CardIcon(
                     icon: FontAwesomeIcons.female,
                     label: 'FEMALE',
@@ -50,7 +56,7 @@ class _InputPageState extends State<InputPage> {
           )),
           Expanded(
             child: ReusableCard(
-              colour: ExpandedWidgetColor,
+              colour: activeCardColor,
             ),
           ),
           Expanded(
@@ -58,7 +64,7 @@ class _InputPageState extends State<InputPage> {
             children: <Widget>[
               Expanded(
                 child: ReusableCard(
-                  colour: ExpandedWidgetColor,
+                  colour: activeCardColor,
                   carchild: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -75,7 +81,7 @@ class _InputPageState extends State<InputPage> {
               ),
               Expanded(
                 child: ReusableCard(
-                  colour: ExpandedWidgetColor,
+                  colour: activeCardColor,
                   carchild: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
