@@ -18,6 +18,17 @@ class _InputPageState extends State<InputPage> {
   Color maleCardColor = incativeCardColor;
   Color femaleCardColor = incativeCardColor;
 
+  //1=male, 2 = demale
+  void updateColor(int gender) {
+    if (gender == 1) {
+      if (maleCardColor == incativeCardColor) {
+        maleCardColor = activeCardColor;
+      } else {
+        maleCardColor = incativeCardColor;
+      }
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
