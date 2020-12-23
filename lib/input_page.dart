@@ -31,20 +31,13 @@ class _InputPageState extends State<InputPage> {
               child: Row(
             children: <Widget>[
               Expanded(
-                child: GestureDetector(
-                  onTap: () {
-                    setState(() {
-                      selectedGender = (Gender.male);
-                    });
-                  },
-                  child: ReusableCard(
-                    colour: selectedGender == Gender.male
-                        ? activeCardColor
-                        : incativeCardColor,
-                    carchild: CardIcon(
-                      icon: FontAwesomeIcons.male,
-                      label: 'MALE',
-                    ),
+                child: ReusableCard(
+                  colour: selectedGender == Gender.male
+                      ? activeCardColor
+                      : incativeCardColor,
+                  carchild: CardIcon(
+                    icon: FontAwesomeIcons.male,
+                    label: 'MALE',
                   ),
                 ),
               ),
