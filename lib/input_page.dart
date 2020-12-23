@@ -4,11 +4,7 @@ import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'icon_content.dart';
 import 'reusable_card.dart';
 import 'enumFunction.dart';
-
-const bottomContainerHeigh = 50.0;
-const activeCardColor = Color(0xFF1D1E33);
-const bottomContainerColor = Color(0xFFEB1555);
-const incativeCardColor = Color(0xFF111328);
+import 'constants.dart';
 
 class InputPage extends StatefulWidget {
   @override
