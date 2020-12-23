@@ -14,3 +14,5 @@ const KbottomContainerHeigh = 50.0;
 const KactiveCardColor = Color(0xFF1D1E33);
 const KbottomContainerColor = Color(0xFFEB1555);
 const KincativeCardColor = Color(0xFF111328);
+const KSliderActiveColor = Color(0xFFEB1555);
+const KSliderInactiveColor = Color(0xFF8D8E98);
