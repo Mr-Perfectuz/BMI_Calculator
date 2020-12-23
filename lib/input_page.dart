@@ -67,6 +67,16 @@ class _InputPageState extends State<InputPage> {
           Expanded(
             child: ReusableCard(
               colour: activeCardColor,
+              carchild: Column(
+                children: <Widget>[
+                  Slider(
+                    value: rating,
+                    onChanged: (newRating) {
+                      setState(() => rating = newRating);
+                    },
+                  )
+                ],
+              ),
             ),
           ),
           Expanded(
