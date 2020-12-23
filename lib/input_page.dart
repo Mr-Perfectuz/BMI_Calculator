@@ -43,8 +43,9 @@ class _InputPageState extends State<InputPage> {
               Expanded(
                 child: GestureDetector(
                   onTap: () {
-                    setState(() {});
-                    print('Male card was pressed');
+                    setState(() {
+                      updateColor(1);
+                    });
                   },
                   child: ReusableCard(
                     colour: maleCardColor,
