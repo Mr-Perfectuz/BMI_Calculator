@@ -36,8 +36,8 @@ class _InputPageState extends State<InputPage> {
                     });
                   },
                   colour: selectedGender == Gender.male
-                      ? KactiveCardColor
-                      : KincativeCardColor,
+                      ? KincativeCardColor
+                      : KactiveCardColor,
                   carchild: CardIcon(
                     icon: FontAwesomeIcons.male,
                     label: 'MALE',
@@ -52,8 +52,8 @@ class _InputPageState extends State<InputPage> {
                     });
                   },
                   colour: selectedGender == Gender.female
-                      ? KactiveCardColor
-                      : KincativeCardColor,
+                      ? KincativeCardColor
+                      : KactiveCardColor,
                   carchild: CardIcon(
                     icon: FontAwesomeIcons.female,
                     label: 'FEMALE',
@@ -94,7 +94,9 @@ class _InputPageState extends State<InputPage> {
                     activeColor: KSliderActiveColor,
                     inactiveColor: KSliderInactiveColor,
                     onChanged: (double newValue) {
-                      print(newValue);
+                      setState(() {
+                        height = newValue.round();
+                      });
                     },
                   ),
                 ],
