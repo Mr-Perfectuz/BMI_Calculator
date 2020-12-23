@@ -15,6 +15,7 @@ class _InputPageState extends State<InputPage> {
   Color maleCardColor = KincativeCardColor;
   Color femaleCardColor = KincativeCardColor;
   Gender selectedGender;
+  int height = 180;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -77,14 +78,17 @@ class _InputPageState extends State<InputPage> {
                     textBaseline: TextBaseline.alphabetic,
                     children: <Widget>[
                       Text(
-                        '180',
+                        height.toString(),
                         style: KSliderTextStyle,
                       ),
                       Text(
                         'cm',
                         style: KlabelTextStyle,
                       ),
-                      Slider(),
+                      Slider(
+                        value: height.toDouble(),
+                        min: 120,
+                      ),
                     ],
                   )
                 ],
