@@ -75,7 +75,11 @@ class _InputPageState extends State<InputPage> {
                       Text(
                         '180',
                         style: KSliderTextStyle,
-                      )
+                      ),
+                      Text(
+                        'cm',
+                        style: KlabelTextStyle,
+                      ),
                     ],
                   )
                 ],
