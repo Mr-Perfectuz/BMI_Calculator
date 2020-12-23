@@ -8,7 +8,7 @@ const KlabelTextStyle = TextStyle(
 const KSliderTextStyle = TextStyle(
   fontSize: 50.0,
   fontWeight: FontWeight.w900,
-),
+);
 
 const KbottomContainerHeigh = 50.0;
 const KactiveCardColor = Color(0xFF1D1E33);
