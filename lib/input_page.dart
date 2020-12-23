@@ -26,11 +26,14 @@ class _InputPageState extends State<InputPage> {
               child: Row(
             children: <Widget>[
               Expanded(
-                child: ReusableCard(
-                  colour: ExpandedWidgetColor,
-                  carchild: CardIcon(
-                    icon: FontAwesomeIcons.male,
-                    label: 'MALE',
+                child: GestureDetector(
+                  onTap: () {},
+                  child: ReusableCard(
+                    colour: ExpandedWidgetColor,
+                    carchild: CardIcon(
+                      icon: FontAwesomeIcons.male,
+                      label: 'MALE',
+                    ),
                   ),
                 ),
               ),
