@@ -12,8 +12,8 @@ class InputPage extends StatefulWidget {
 }
 
 class _InputPageState extends State<InputPage> {
-  Color maleCardColor = incativeCardColor;
-  Color femaleCardColor = incativeCardColor;
+  Color maleCardColor = KincativeCardColor;
+  Color femaleCardColor = KincativeCardColor;
   Gender selectedGender;
   @override
   Widget build(BuildContext context) {
@@ -34,8 +34,8 @@ class _InputPageState extends State<InputPage> {
                     });
                   },
                   colour: selectedGender == Gender.male
-                      ? activeCardColor
-                      : incativeCardColor,
+                      ? KactiveCardColor
+                      : KincativeCardColor,
                   carchild: CardIcon(
                     icon: FontAwesomeIcons.male,
                     label: 'MALE',
@@ -50,8 +50,8 @@ class _InputPageState extends State<InputPage> {
                     });
                   },
                   colour: selectedGender == Gender.female
-                      ? activeCardColor
-                      : incativeCardColor,
+                      ? KactiveCardColor
+                      : KincativeCardColor,
                   carchild: CardIcon(
                     icon: FontAwesomeIcons.female,
                     label: 'FEMALE',
@@ -62,7 +62,7 @@ class _InputPageState extends State<InputPage> {
           )),
           Expanded(
             child: ReusableCard(
-              colour: activeCardColor,
+              colour: KactiveCardColor,
               carchild: Column(
                 children: <Widget>[Text('Height')],
               ),
@@ -73,7 +73,7 @@ class _InputPageState extends State<InputPage> {
             children: <Widget>[
               Expanded(
                 child: ReusableCard(
-                  colour: activeCardColor,
+                  colour: KactiveCardColor,
                   carchild: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -90,7 +90,7 @@ class _InputPageState extends State<InputPage> {
               ),
               Expanded(
                 child: ReusableCard(
-                  colour: activeCardColor,
+                  colour: KactiveCardColor,
                   carchild: Column(
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
@@ -111,10 +111,10 @@ class _InputPageState extends State<InputPage> {
             margin: EdgeInsets.all(10.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10.0),
-              color: bottomContainerColor,
+              color: KbottomContainerColor,
             ),
             width: 200.0,
-            height: bottomContainerHeigh,
+            height: KbottomContainerHeigh,
           )
         ],
       ),
