@@ -72,6 +72,7 @@ class _InputPageState extends State<InputPage> {
                     style: KlabelTextStyle,
                   ),
                   Row(
+                    mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
                         '180',
