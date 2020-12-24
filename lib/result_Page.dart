@@ -10,7 +10,20 @@ class Result extends StatelessWidget {
           "BMI CALCULATOR",
         ),
       ),
-      body: Container(),
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        children: <Widget>[
+          Container(
+            child: Text(
+              'Your Result',
+              style: TextStyle(
+                fontWeight: FontWeight.bold,
+                fontSize: 50.0,
+              ),
+            ),
+          )
+        ],
+      ),
     );
   }
 }

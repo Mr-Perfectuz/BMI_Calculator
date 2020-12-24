@@ -128,6 +128,7 @@ class _InputPageState extends State<InputPage> {
                       ),
                       Text(''),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           Icon(
                             Icons.add,
