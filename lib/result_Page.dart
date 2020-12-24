@@ -7,7 +7,7 @@ class Result extends StatelessWidget {
       appBar: AppBar(
         backgroundColor: Colors.blue,
         title: Text(
-          "BMI CCALCULATOR",
+          "BMI CALCULATOR",
         ),
       ),
       body: Container(),
