@@ -89,6 +89,7 @@ class _InputPageState extends State<InputPage> {
                   ),
                   SliderTheme(
                     data: SliderTheme.of(context).copyWith(
+                        inactiveTickMarkColor: KSliderInactiveColor,
                         activeTrackColor: KSliderActiveColor,
                         thumbColor: Color(0xFFEB1555),
                         overlayColor: Color(0x29EB1555),
@@ -100,7 +101,6 @@ class _InputPageState extends State<InputPage> {
                       value: height.toDouble(),
                       min: 120.0,
                       max: 250.0,
-                      inactiveColor: KSliderInactiveColor,
                       onChanged: (double newValue) {
                         setState(() {
                           height = newValue.round();
