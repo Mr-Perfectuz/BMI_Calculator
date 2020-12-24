@@ -141,10 +141,7 @@ class _InputPageState extends State<InputPage> {
                     children: <Widget>[
                       Text(
                         'AGE',
-                        style: TextStyle(
-                          fontSize: 20.0,
-                          color: Color(0xFF8D8E98),
-                        ),
+                        style: KWeightTextStyle,
                       ),
                     ],
                   ),
