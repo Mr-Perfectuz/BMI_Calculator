@@ -127,6 +127,13 @@ class _InputPageState extends State<InputPage> {
                         style: KWeightTextStyle,
                       ),
                       Text(''),
+                      Row(
+                        children: <Widget>[
+                          Icon(
+                            Icons.add,
+                          ),
+                        ],
+                      ),
                     ],
                   ),
                 ),
@@ -134,16 +141,7 @@ class _InputPageState extends State<InputPage> {
               Expanded(
                 child: ReusableCard(
                   colour: KactiveCardColor,
-                  carchild: Column(
-                    mainAxisAlignment: MainAxisAlignment.center,
-                    children: <Widget>[
-                      Text(
-                        'AGE',
-                        style: KWeightTextStyle,
-                      ),
-                      Text(''),
-                    ],
-                  ),
+                  carchild: Column(),
                 ),
               ),
             ],
