@@ -1,11 +1,18 @@
 import 'package:flutter/material.dart';
 
-class Resul extends StatelessWidget {
+class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("BMI CCALCULATOR"),
+        backgroundColor: Colors.blue,
+        title: Text(
+          "BMI CCALCULATOR",
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+      body: Container(
+        color: Colors.white,
       ),
     );
   }

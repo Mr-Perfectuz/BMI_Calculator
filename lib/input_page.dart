@@ -5,6 +5,7 @@ import 'icon_content.dart';
 import 'reusable_card.dart';
 import 'enumFunction.dart';
 import 'constants.dart';
+import 'result_Page.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -151,20 +152,32 @@ class _InputPageState extends State<InputPage> {
               ),
             ],
           )),
-          Container(
-            child: Center(
-              child: Text(
-                'CALCULATE',
-                style: KCaalculateTextStyle,
+          GestureDetector(
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) {
+                    return Result();
+                  },
+                ),
+              );
+            },
+            child: Container(
+              child: Center(
+                child: Text(
+                  'CALCULATE',
+                  style: KCaalculateTextStyle,
+                ),
               ),
+              margin: EdgeInsets.all(10.0),
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10.0),
+                color: KbottomContainerColor,
+              ),
+              width: 200.0,
+              height: KbottomContainerHeigh,
             ),
-            margin: EdgeInsets.all(10.0),
-            decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10.0),
-              color: KbottomContainerColor,
-            ),
-            width: 200.0,
-            height: KbottomContainerHeigh,
           )
         ],
       ),
