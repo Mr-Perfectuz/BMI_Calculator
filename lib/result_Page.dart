@@ -8,17 +8,19 @@ class Result extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Center(child: Text("BMI CALCULATOR")),
+        title: Text("BMI CALCULATOR"),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-        crossAxisAlignment: CrossAxisAlignment.center,
+        crossAxisAlignment: CrossAxisAlignment.stretch,
         children: <Widget>[
           Expanded(
             child: Container(
-              child: Text(
-                'Your Result',
-                style: KTitleTextStyle,
+              child: Center(
+                child: Text(
+                  'Your Result',
+                  style: KTitleTextStyle,
+                ),
               ),
             ),
           ),
@@ -27,11 +29,11 @@ class Result extends StatelessWidget {
             child: ReusableCard(
               colour: KactiveCardColor,
               carchild: Column(
-                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: <Widget>[
                   Text(
-                    '',
+                    'Normal',
                     style: KResultTextStyle,
                   )
                 ],
