@@ -10,6 +10,11 @@ const KSliderTextStyle = TextStyle(
   fontWeight: FontWeight.w900,
 );
 
+const KCaalculateTextStyle = TextStyle(
+  fontSize: 20.0,
+  fontWeight: FontWeight.bold,
+);
+
 const KbottomContainerHeigh = 50.0;
 const KactiveCardColor = Color(0xFF1D1E33);
 const KbottomContainerColor = Color(0xFFEB1555);

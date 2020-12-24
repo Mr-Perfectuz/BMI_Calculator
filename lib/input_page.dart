@@ -152,6 +152,12 @@ class _InputPageState extends State<InputPage> {
             ],
           )),
           Container(
+            child: Center(
+              child: Text(
+                'CALCULATE',
+                style: KCaalculateTextStyle,
+              ),
+            ),
             margin: EdgeInsets.all(10.0),
             decoration: BoxDecoration(
               borderRadius: BorderRadius.circular(10.0),
