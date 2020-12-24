@@ -20,6 +20,11 @@ const KWeightTextStyle = TextStyle(
   color: Color(0xFF8D8E98),
 );
 
+const KTitleTextStyle = TextStyle(
+  fontWeight: FontWeight.bold,
+  fontSize: 50.0,
+),
+
 const KbottomContainerHeigh = 50.0;
 const KactiveCardColor = Color(0xFF1D1E33);
 const KbottomContainerColor = Color(0xFFEB1555);

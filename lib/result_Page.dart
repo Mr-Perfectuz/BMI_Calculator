@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'constants.dart';
+
 class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -16,10 +18,7 @@ class Result extends StatelessWidget {
           Container(
             child: Text(
               'Your Result',
-              style: TextStyle(
-                fontWeight: FontWeight.bold,
-                fontSize: 50.0,
-              ),
+              style: KTitleTextStyle,
             ),
           )
         ],
