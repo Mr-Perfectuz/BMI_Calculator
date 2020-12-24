@@ -31,3 +31,9 @@ const KTitleTextStyle = TextStyle(
   fontWeight: FontWeight.bold,
   fontSize: 50.0,
 );
+
+const KResultTextStyle = TextStyle(
+  color: Color(0xFF24D876),
+  fontSize: 22.0,
+  fontWeight: FontWeight.bold,
+);

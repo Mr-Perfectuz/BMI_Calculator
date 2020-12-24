@@ -12,6 +12,7 @@ class Result extends StatelessWidget {
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,
+        crossAxisAlignment: CrossAxisAlignment.center,
         children: <Widget>[
           Expanded(
             child: Container(
@@ -25,6 +26,16 @@ class Result extends StatelessWidget {
             flex: 5,
             child: ReusableCard(
               colour: KactiveCardColor,
+              carchild: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                crossAxisAlignment: CrossAxisAlignment.center,
+                children: <Widget>[
+                  Text(
+                    '',
+                    style: KResultTextStyle,
+                  )
+                ],
+              ),
             ),
           ),
         ],
