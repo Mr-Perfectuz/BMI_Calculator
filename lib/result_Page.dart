@@ -8,12 +8,9 @@ class Result extends StatelessWidget {
         backgroundColor: Colors.blue,
         title: Text(
           "BMI CCALCULATOR",
-          style: TextStyle(color: Colors.white),
         ),
       ),
-      body: Container(
-        color: Colors.white,
-      ),
+      body: Container(),
     );
   }
 }
