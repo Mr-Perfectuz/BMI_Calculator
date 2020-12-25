@@ -124,7 +124,7 @@ class _InputPageState extends State<InputPage> {
                     children: <Widget>[
                       Text(
                         'WEIGHT',
-                        style: KWeightTextStyle,
+                        style: KlabelTextStyle,
                       ),
                       Text(''),
                       Row(

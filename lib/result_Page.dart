@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-
 import 'constants.dart';
 import 'reusable_card.dart';
+
 
 class Result extends StatelessWidget {
   @override
@@ -35,6 +35,12 @@ class Result extends StatelessWidget {
                   Text(
                     'Normal',
                     style: KResultTextStyle,
+                  ),
+                  Text(
+                    '22.5',
+                    style: TextStyle(
+                      fontSize: 20.0,
+                    ),
                   )
                 ],
               ),

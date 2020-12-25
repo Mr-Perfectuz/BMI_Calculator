@@ -8,7 +8,7 @@ const KSliderActiveColor = Colors.white;
 const KSliderInactiveColor = Color(0xFF8D8E98);
 
 const KlabelTextStyle = TextStyle(
-  fontSize: 30.0,
+  fontSize: 20.0,
   color: Color(0xFF8D8E98),
 );
 
