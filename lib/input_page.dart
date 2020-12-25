@@ -127,7 +127,7 @@ class _InputPageState extends State<InputPage> {
                         'WEIGHT',
                         style: KlabelTextStyle,
                       ),
-                      Text(''),
+                      Text(weight.toString()),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
