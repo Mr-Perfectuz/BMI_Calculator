@@ -17,6 +17,7 @@ class _InputPageState extends State<InputPage> {
   Color femaleCardColor = KincativeCardColor;
   Gender selectedGender;
   int height = 180;
+  int weight = 60;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
