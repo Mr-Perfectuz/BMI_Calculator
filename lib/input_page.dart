@@ -18,6 +18,7 @@ class _InputPageState extends State<InputPage> {
   Gender selectedGender;
   int height = 180;
   int weight = 60;
+  int age = 10;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -134,6 +135,7 @@ class _InputPageState extends State<InputPage> {
                       FloatingActionButton(
                         backgroundColor: Color(0xFF4C4F5E),
                         child: Icon(Icons.add),
+                        onPressed: () {},
                       ),
                     ],
                   ),
@@ -150,12 +152,13 @@ class _InputPageState extends State<InputPage> {
                         style: KlabelTextStyle,
                       ),
                       Text(
-                        weight.toString(),
+                        age.toString(),
                         style: KSliderTextStyle,
                       ),
                       FloatingActionButton(
                         backgroundColor: Color(0xFF4C4F5E),
                         child: Icon(Icons.add),
+                        onPressed: () {},
                       ),
                     ],
                   ),
