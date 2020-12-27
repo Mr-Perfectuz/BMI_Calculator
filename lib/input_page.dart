@@ -137,6 +137,7 @@ class _InputPageState extends State<InputPage> {
                           Icon(
                             Icons.add,
                           ),
+                          Icon(Icons.minimize),
                         ],
                       ),
                     ],
