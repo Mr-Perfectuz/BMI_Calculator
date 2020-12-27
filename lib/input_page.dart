@@ -142,7 +142,23 @@ class _InputPageState extends State<InputPage> {
               Expanded(
                 child: ReusableCard(
                   colour: KactiveCardColor,
-                  carchild: Column(),
+                  carchild: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'AGE',
+                        style: KlabelTextStyle,
+                      ),
+                      Text(
+                        weight.toString(),
+                        style: KSliderTextStyle,
+                      ),
+                      FloatingActionButton(
+                        backgroundColor: Color(0xFF4C4F5E),
+                        child: Icon(Icons.add),
+                      ),
+                    ],
+                  ),
                 ),
               ),
             ],
