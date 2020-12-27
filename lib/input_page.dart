@@ -129,7 +129,7 @@ class _InputPageState extends State<InputPage> {
                       ),
                       Text(
                         weight.toString(),
-                        style: TextStyle(fontSize: 45.0),
+                        style: KSliderTextStyle,
                       ),
                       Row(
                         mainAxisAlignment: MainAxisAlignment.center,
