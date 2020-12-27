@@ -134,7 +134,10 @@ class _InputPageState extends State<InputPage> {
                       ),
                       FloatingActionButton(
                         backgroundColor: Color(0xFF4C4F5E),
-                        child: Icon(Icons.add),
+                        child: Icon(
+                          Icons.add,
+                          color: Colors.white,
+                        ),
                         onPressed: () {},
                       ),
                     ],
@@ -157,7 +160,10 @@ class _InputPageState extends State<InputPage> {
                       ),
                       FloatingActionButton(
                         backgroundColor: Color(0xFF4C4F5E),
-                        child: Icon(Icons.add),
+                        child: Icon(
+                          Icons.add,
+                          color: Colors.white,
+                        ),
                         onPressed: () {},
                       ),
                     ],
