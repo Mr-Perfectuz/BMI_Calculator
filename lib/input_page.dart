@@ -131,15 +131,6 @@ class _InputPageState extends State<InputPage> {
                         weight.toString(),
                         style: KSliderTextStyle,
                       ),
-                      Row(
-                        mainAxisAlignment: MainAxisAlignment.center,
-                        children: <Widget>[
-                          Icon(
-                            Icons.add,
-                          ),
-                          Icon(Icons.minimize),
-                        ],
-                      ),
                     ],
                   ),
                 ),
