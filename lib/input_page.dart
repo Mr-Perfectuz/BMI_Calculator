@@ -132,7 +132,7 @@ class _InputPageState extends State<InputPage> {
                         style: KSliderTextStyle,
                       ),
                       FloatingActionButton(
-                        backgroundColor: KSliderInactiveColor,
+                        backgroundColor: Color(0xFF8D8E80),
                         child: Icon(Icons.add),
                       ),
                     ],
