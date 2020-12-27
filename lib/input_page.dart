@@ -131,6 +131,7 @@ class _InputPageState extends State<InputPage> {
                         weight.toString(),
                         style: KSliderTextStyle,
                       ),
+                      FloatingActionButton(),
                     ],
                   ),
                 ),
