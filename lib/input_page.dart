@@ -168,6 +168,7 @@ class _InputPageState extends State<InputPage> {
                         style: KSliderTextStyle,
                       ),
                       Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
                         children: <Widget>[
                           FloatingActionButton(
                             backgroundColor: Color(0xFF4C4F5E),
