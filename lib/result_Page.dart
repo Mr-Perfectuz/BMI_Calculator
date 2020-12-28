@@ -39,11 +39,10 @@ class Result extends StatelessWidget {
                     '22.5',
                     style: KBMITextStyle,
                   ),
-                  Center(
-                    child: Text(
-                      'Your BMI result is quite low, you should eat more ! ',
-                      style: KBodyTextStyle,
-                    ),
+                  Text(
+                    'Your BMI result is quite low, you should eat more ! ',
+                    textAlign: TextAlign.center,
+                    style: KBodyTextStyle,
                   )
                 ],
               ),
