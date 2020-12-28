@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import 'constants.dart';
 import 'reusable_card.dart';
 
-
 class Result extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -38,8 +37,12 @@ class Result extends StatelessWidget {
                   ),
                   Text(
                     '22.5',
-                    style: TextStyle(
-                      fontSize: 20.0,
+                    style: KBMITextStyle,
+                  ),
+                  Center(
+                    child: Text(
+                      'Your BMI result is quite low, you should eat more ! ',
+                      style: KBodyTextStyle,
                     ),
                   )
                 ],
