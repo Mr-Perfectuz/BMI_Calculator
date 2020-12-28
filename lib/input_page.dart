@@ -168,7 +168,7 @@ class _InputPageState extends State<InputPage> {
                         style: KSliderTextStyle,
                       ),
                       Row(
-                        children: [
+                        children: <Widget>[
                           FloatingActionButton(
                             backgroundColor: Color(0xFF4C4F5E),
                             child: Icon(
@@ -176,6 +176,9 @@ class _InputPageState extends State<InputPage> {
                               color: Colors.white,
                             ),
                             onPressed: () {},
+                          ),
+                          SizedBox(
+                            width: 10.0,
                           ),
                           FloatingActionButton(
                             backgroundColor: Color(0xFF4C4F5E),
