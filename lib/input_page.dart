@@ -204,34 +204,45 @@ class _InputPageState extends State<InputPage> {
               ),
             ],
           )),
-          GestureDetector(
-            onTap: () {
-              Navigator.push(
-                context,
-                MaterialPageRoute(
-                  builder: (context) {
-                    return Result();
-                  },
-                ),
-              );
-            },
-            child: Container(
-              child: Center(
-                child: Text(
-                  'CALCULATE',
-                  style: KCaalculateTextStyle,
-                ),
-              ),
-              margin: EdgeInsets.all(10.0),
-              decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(10.0),
-                color: Colors.lightBlueAccent,
-              ),
-              width: 200.0,
-              height: KbottomContainerHeigh,
-            ),
-          )
+          BottomBotton()
         ],
+      ),
+    );
+  }
+}
+
+class BottomBotton extends StatelessWidget {
+  const BottomBotton({
+    Key key,
+  }) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return GestureDetector(
+      onTap: () {
+        Navigator.push(
+          context,
+          MaterialPageRoute(
+            builder: (context) {
+              return Result();
+            },
+          ),
+        );
+      },
+      child: Container(
+        child: Center(
+          child: Text(
+            'CALCULATE',
+            style: KCaalculateTextStyle,
+          ),
+        ),
+        margin: EdgeInsets.all(10.0),
+        decoration: BoxDecoration(
+          borderRadius: BorderRadius.circular(10.0),
+          color: Colors.lightBlueAccent,
+        ),
+        width: 200.0,
+        height: KbottomContainerHeigh,
       ),
     );
   }
