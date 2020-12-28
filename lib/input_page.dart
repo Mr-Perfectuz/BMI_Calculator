@@ -225,7 +225,7 @@ class _InputPageState extends State<InputPage> {
               margin: EdgeInsets.all(10.0),
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10.0),
-                color: KbottomContainerColor,
+                color: Colors.lightBlueAccent,
               ),
               width: 200.0,
               height: KbottomContainerHeigh,
