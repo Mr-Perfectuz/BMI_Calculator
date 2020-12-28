@@ -179,12 +179,22 @@ class _InputPageState extends State<InputPage> {
                         children: <Widget>[
                           RoundIconButton(
                             icon: FontAwesomeIcons.minus,
+                            onPressed: () {
+                              setState(() {
+                                age--;
+                              });
+                            },
                           ),
                           SizedBox(
                             width: 10.0,
                           ),
                           RoundIconButton(
                             icon: FontAwesomeIcons.plus,
+                            onPressed: () {
+                              setState(() {
+                                age++;
+                              });
+                            },
                           ),
                         ],
                       ),
