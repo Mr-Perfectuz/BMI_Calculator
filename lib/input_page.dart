@@ -175,6 +175,14 @@ class _InputPageState extends State<InputPage> {
                         ),
                         onPressed: () {},
                       ),
+                      FloatingActionButton(
+                        backgroundColor: Color(0xFF4C4F5E),
+                        child: Icon(
+                          Icons.add,
+                          color: Colors.white,
+                        ),
+                        onPressed: () {},
+                      ),
                     ],
                   ),
                 ),
@@ -218,6 +226,7 @@ class RoundIconButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return RawMaterialButton(
+      constraints: BoxConstraints(minWidth: 56.0, minHeight: 56.0),
       shape: CircleBorder(),
       fillColor: Color(0xFF4C4F5E),
       onPressed: () {},
