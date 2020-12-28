@@ -177,6 +177,14 @@ class _InputPageState extends State<InputPage> {
                             ),
                             onPressed: () {},
                           ),
+                          FloatingActionButton(
+                            backgroundColor: Color(0xFF4C4F5E),
+                            child: Icon(
+                              Icons.add,
+                              color: Colors.white,
+                            ),
+                            onPressed: () {},
+                          ),
                         ],
                       ),
                     ],
