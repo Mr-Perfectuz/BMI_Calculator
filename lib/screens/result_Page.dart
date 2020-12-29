@@ -2,7 +2,6 @@ import 'package:flutter/material.dart';
 import '../constants.dart';
 import '../components/reusable_card.dart';
 import '../components/bottom_button.dart';
-import '../screens/input_page.dart';
 
 class Result extends StatelessWidget {
   @override
@@ -52,14 +51,7 @@ class Result extends StatelessWidget {
           ),
           BottomBotton(
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) {
-                      return InputPage();
-                    },
-                  ),
-                );
+                Navigator.pop(context);
               },
               buttonTitle: 'RE-CALCULATE'),
         ],
