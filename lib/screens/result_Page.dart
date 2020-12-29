@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'constants.dart';
-import 'reusable_card.dart';
+import '../constants.dart';
+import '../components/reusable_card.dart';
 
 class Result extends StatelessWidget {
   @override
