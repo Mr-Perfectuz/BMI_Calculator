@@ -6,6 +6,8 @@ import 'reusable_card.dart';
 import 'enumFunction.dart';
 import 'constants.dart';
 import 'result_Page.dart';
+import 'round_icon_button.dart';
+import 'bottom_button.dart';
 
 class InputPage extends StatefulWidget {
   @override
@@ -219,50 +221,6 @@ class _InputPageState extends State<InputPage> {
           )
         ],
       ),
-    );
-  }
-}
-
-class BottomBotton extends StatelessWidget {
-  BottomBotton({@required this.onTap, @required this.buttonTitle});
-  final Function onTap;
-  final String buttonTitle;
-  @override
-  Widget build(BuildContext context) {
-    return GestureDetector(
-      onTap: onTap,
-      child: Container(
-        child: Center(
-          child: Text(
-            buttonTitle,
-            style: KCaalculateTextStyle,
-          ),
-        ),
-        margin: EdgeInsets.all(10.0),
-        decoration: BoxDecoration(
-          borderRadius: BorderRadius.circular(10.0),
-          color: KbottomContainerColor,
-        ),
-        width: 200.0,
-        height: KbottomContainerHeigh,
-      ),
-    );
-  }
-}
-
-class RoundIconButton extends StatelessWidget {
-  RoundIconButton({@required this.icon, @required this.onPressed});
-  final IconData icon;
-  final Function onPressed;
-  @override
-  Widget build(BuildContext context) {
-    return RawMaterialButton(
-      child: Icon(icon),
-      elevation: 6.0,
-      constraints: BoxConstraints.tightFor(width: 56.0, height: 56.0),
-      shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(10.0)),
-      fillColor: Color(0xFF4C4F5E),
-      onPressed: onPressed,
     );
   }
 }
