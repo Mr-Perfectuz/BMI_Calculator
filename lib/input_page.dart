@@ -212,10 +212,6 @@ class _InputPageState extends State<InputPage> {
 }
 
 class BottomBotton extends StatelessWidget {
-  const BottomBotton({
-    Key key,
-  }) : super(key: key);
-
   @override
   Widget build(BuildContext context) {
     return GestureDetector(
