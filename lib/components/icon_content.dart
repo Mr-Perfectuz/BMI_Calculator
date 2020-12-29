@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
-import '../constants.dart';
+import 'package:bmi_calculator/constants.dart';
 
-class CardIcon extends StatelessWidget {
-  CardIcon({this.icon, this.label});
+class IconContent extends StatelessWidget {
+  IconContent({this.icon, this.label});
+
   final IconData icon;
   final String label;
+
   @override
   Widget build(BuildContext context) {
     return Column(
@@ -19,8 +21,8 @@ class CardIcon extends StatelessWidget {
         ),
         Text(
           label,
-          style: KlabelTextStyle,
-        ),
+          style: kLabelTextStyle,
+        )
       ],
     );
   }
