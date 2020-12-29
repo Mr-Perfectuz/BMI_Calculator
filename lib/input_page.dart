@@ -241,7 +241,7 @@ class BottomBotton extends StatelessWidget {
         margin: EdgeInsets.all(10.0),
         decoration: BoxDecoration(
           borderRadius: BorderRadius.circular(10.0),
-          color: Colors.lightBlueAccent,
+          color: KbottomContainerColor,
         ),
         width: 200.0,
         height: KbottomContainerHeigh,
